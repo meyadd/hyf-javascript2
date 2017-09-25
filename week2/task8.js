@@ -6,5 +6,5 @@ function printArray(arr){
 			console.log(val);
 	});
 }
-let arr = [[1,2], [3,4], [5,6]];
+let arr = [[1,2], [3,4], [[100,1000],[50,500 , [-100 , -200]]]];
 printArray(arr);
