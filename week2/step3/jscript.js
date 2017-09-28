@@ -10,7 +10,7 @@ function button_clicked(){
 	getWeather(city_name , country_code);
 }
 function getWeather(city_name , country_code){
-	let url = "http://api.openweathermap.org/data/2.5/weather?q=" + city_name + "," + country_code + "&appid=5e28086b2a257182c22b3d75c81e658b";
+	let url = "https://api.openweathermap.org/data/2.5/weather?q=" + city_name + "," + country_code + "&appid=5e28086b2a257182c22b3d75c81e658b";
 	httpGetAsync(url , renderHtml);
 }
 
@@ -96,7 +96,7 @@ function renderHtml(data){
 	let main_icon = document.createElement('img');
 	main_label.appendChild(main_icon);
 	main_icon.setAttribute("class","icon");
-	main_icon.src = "http://openweathermap.org/img/w/" + obj.weather[0].icon + ".png";
+	main_icon.src = "https://openweathermap.org/img/w/" + obj.weather[0].icon + ".png";
 	
 	let mail_ul = document.createElement('ul');
 	main_container.appendChild(mail_ul);
