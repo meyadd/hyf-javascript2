@@ -1,0 +1,4 @@
+function UniqueArray(arr){
+  return arr.sort().filter(function(val , index , array){return val != array[index -1]});
+}
+UniqueArray(['a', 'b', 'c', 'd', 'a', 'e', 'f', 'c']);
